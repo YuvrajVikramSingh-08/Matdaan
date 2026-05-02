@@ -1,0 +1,88 @@
+import type { LanguageOption } from '../types';
+
+export const LANGUAGES: LanguageOption[] = [
+  { code: 'en', name: 'English', nativeName: 'English', flag: '🇮🇳' },
+  { code: 'hi', name: 'Hindi', nativeName: 'हिंदी', flag: '🇮🇳' },
+  { code: 'bn', name: 'Bengali', nativeName: 'বাংলা', flag: '🇮🇳' },
+  { code: 'te', name: 'Telugu', nativeName: 'తెలుగు', flag: '🇮🇳' },
+  { code: 'mr', name: 'Marathi', nativeName: 'मराठी', flag: '🇮🇳' },
+  { code: 'ta', name: 'Tamil', nativeName: 'தமிழ்', flag: '🇮🇳' },
+  { code: 'gu', name: 'Gujarati', nativeName: 'ગુજરાતી', flag: '🇮🇳' },
+  { code: 'pa', name: 'Punjabi', nativeName: 'ਪੰਜਾਬੀ', flag: '🇮🇳' },
+  { code: 'kn', name: 'Kannada', nativeName: 'ಕನ್ನಡ', flag: '🇮🇳' },
+  { code: 'ml', name: 'Malayalam', nativeName: 'മലയാളം', flag: '🇮🇳' },
+  { code: 'or', name: 'Odia', nativeName: 'ଓଡ଼ିଆ', flag: '🇮🇳' },
+];
+
+export const DEFAULT_LANGUAGE = 'en';
+
+export const UI_TRANSLATIONS: Record<string, Record<string, string>> = {
+  en: {
+    chatTab: 'Chat', timelineTab: 'Timeline', boothTab: 'Find Booth', helplineTab: 'Helpline',
+    firstVoterTab: 'First Voter', factCheckTab: 'Fact Check', evmTab: 'EVM Guide', voterStatusTab: 'Voter Status',
+    typeMessage: 'Ask me about elections...', welcome: 'Namaste! 🙏 I\'m Matdaan',
+    welcomeSubtext: 'Your AI assistant for understanding India\'s election process. Ask me anything!',
+    listen: '🔊 Listen', playing: '⏸️ Playing...', findBooth: 'Find My Nearest Booth',
+    footerText: 'Made with ❤️ for Indian Democracy · Powered by Google Cloud AI',
+    electionTimeline: '🗓️ Election Timeline', findYourBooth: '📍 Find Your Booth',
+    helplines: '📞 Helplines', howEvmWorks: '🖥️ How EVM Works',
+    quickReply1: 'How do I register to vote?', quickReply2: 'What is a polling booth?',
+    quickReply3: 'When is the next election?', quickReply4: 'How is a winner decided?',
+    quickReply5: 'I\'m a first-time voter', timelineTitle: 'Indian General Election Process',
+    boothFinderTitle: 'Find Your Nearest Polling Booth',
+    boothFinderDesc: 'We\'ll use your location to find polling stations near you.',
+    startVoiceInput: 'Start voice input', stopRecording: 'Stop recording',
+    copied: 'Copied!', loading: 'Loading...', recording: 'Recording...',
+    askMatdaan: 'Ask Matdaan about this', getDirections: '📍 Get Directions',
+    copyAddress: '📋 Copy Address', copyNumber: '📋 Copy Number', copyEmail: '📋 Copy Email',
+    openWebsite: '🔗 Open Website', selectLanguage: 'Select Language',
+    checkStatus: 'Check Status', epicNumber: 'EPIC / Voter ID Number', selectState: 'Select State',
+    firstName: 'First Name', lastName: 'Last Name',
+    pasteRumour: 'Paste a message or claim to fact-check...', checkFact: 'Check Fact',
+    firstVoterTitle: 'First-Time Voter? We\'ve Got You!',
+    firstVoterSubtext: 'Follow this 5-step checklist to be election-ready.',
+    noResults: 'No booths found nearby',
+    locationDenied: 'Location access denied. Please enter your address manually.',
+  },
+  hi: {
+    chatTab: 'चैट', timelineTab: 'समयरेखा', boothTab: 'बूथ खोजें', helplineTab: 'हेल्पलाइन',
+    firstVoterTab: 'प्रथम मतदाता', factCheckTab: 'तथ्य जांच', evmTab: 'EVM गाइड', voterStatusTab: 'मतदाता स्थिति',
+    typeMessage: 'चुनाव के बारे में पूछें...', welcome: 'नमस्ते! 🙏 मैं मतदान हूँ',
+    welcomeSubtext: 'भारत की चुनाव प्रक्रिया को समझने के लिए आपका AI सहायक। कुछ भी पूछें!',
+    listen: '🔊 सुनें', playing: '⏸️ चल रहा है...', findBooth: 'मेरा नज़दीकी बूथ खोजें',
+    footerText: '❤️ भारतीय लोकतंत्र के लिए · Google Cloud AI द्वारा संचालित',
+    electionTimeline: '🗓️ चुनाव समयरेखा', findYourBooth: '📍 अपना बूथ खोजें',
+    helplines: '📞 हेल्पलाइन', howEvmWorks: '🖥️ EVM कैसे काम करता है',
+    quickReply1: 'मैं वोट के लिए कैसे रजिस्टर करूं?', quickReply2: 'पोलिंग बूथ क्या है?',
+    quickReply3: 'अगला चुनाव कब है?', quickReply4: 'विजेता कैसे तय होता है?',
+    quickReply5: 'मैं पहली बार मतदाता हूँ', timelineTitle: 'भारतीय आम चुनाव प्रक्रिया',
+    boothFinderTitle: 'अपना नज़दीकी पोलिंग बूथ खोजें',
+    boothFinderDesc: 'हम आपके स्थान का उपयोग कर पास के पोलिंग स्टेशन खोजेंगे।',
+    startVoiceInput: 'आवाज़ से बोलें', stopRecording: 'रिकॉर्डिंग बंद करें',
+    copied: 'कॉपी हो गया!', loading: 'लोड हो रहा है...', recording: 'रिकॉर्डिंग...',
+    askMatdaan: 'मतदान से इसके बारे में पूछें', getDirections: '📍 दिशा निर्देश',
+    copyAddress: '📋 पता कॉपी करें', copyNumber: '📋 नंबर कॉपी करें', copyEmail: '📋 ईमेल कॉपी करें',
+    openWebsite: '🔗 वेबसाइट खोलें', selectLanguage: 'भाषा चुनें',
+    checkStatus: 'स्थिति जांचें', epicNumber: 'EPIC / मतदाता पहचान संख्या', selectState: 'राज्य चुनें',
+    firstName: 'पहला नाम', lastName: 'उपनाम',
+    pasteRumour: 'तथ्य-जांच के लिए कोई संदेश पेस्ट करें...', checkFact: 'तथ्य जांचें',
+    firstVoterTitle: 'पहली बार मतदाता? हम मदद करेंगे!',
+    firstVoterSubtext: 'चुनाव के लिए तैयार होने के लिए इन 5 चरणों का पालन करें।',
+    noResults: 'पास में कोई बूथ नहीं मिला',
+    locationDenied: 'स्थान अस्वीकृत। कृपया पता दर्ज करें।',
+  },
+  bn: { chatTab: 'চ্যাট', timelineTab: 'সময়রেখা', boothTab: 'বুথ খুঁজুন', helplineTab: 'হেল্পলাইন', firstVoterTab: 'প্রথম ভোটার', factCheckTab: 'তথ্য যাচাই', evmTab: 'EVM গাইড', voterStatusTab: 'ভোটার স্থিতি', typeMessage: 'নির্বাচন সম্পর্কে জিজ্ঞাসা করুন...', welcome: 'নমস্কার! 🙏 আমি মতদান', welcomeSubtext: 'ভারতের নির্বাচন প্রক্রিয়া বুঝতে আপনার AI সহায়ক।', listen: '🔊 শুনুন', playing: '⏸️ চলছে...', findBooth: 'আমার নিকটতম বুথ খুঁজুন', footerText: '❤️ ভারতীয় গণতন্ত্রের জন্য তৈরি', electionTimeline: '🗓️ নির্বাচন সময়রেখা', findYourBooth: '📍 আপনার বুথ খুঁজুন', helplines: '📞 হেল্পলাইন', howEvmWorks: '🖥️ EVM কিভাবে কাজ করে', quickReply1: 'ভোটার হিসেবে নিবন্ধন কিভাবে?', quickReply2: 'পোলিং বুথ কী?', quickReply3: 'পরবর্তী নির্বাচন কবে?', quickReply4: 'বিজয়ী কিভাবে নির্ধারিত হয়?', quickReply5: 'আমি প্রথমবার ভোটার', timelineTitle: 'ভারতীয় সাধারণ নির্বাচন প্রক্রিয়া' },
+  te: { chatTab: 'చాట్', timelineTab: 'టైమ్‌లైన్', boothTab: 'బూత్ కనుగొనండి', helplineTab: 'హెల్ప్‌లైన్', firstVoterTab: 'మొదటి ఓటరు', factCheckTab: 'వాస్తవ తనిఖీ', evmTab: 'EVM గైడ్', voterStatusTab: 'ఓటరు స్థితి', typeMessage: 'ఎన్నికల గురించి అడగండి...', welcome: 'నమస్కారం! 🙏 నేను మతదాన్', welcomeSubtext: 'భారత ఎన్నికల ప్రక్రియను అర్థం చేసుకోవడానికి మీ AI సహాయకుడు.', listen: '🔊 వినండి', playing: '⏸️ ప్లే...', findBooth: 'నా సమీపంలోని బూత్', footerText: '❤️ భారత ప్రజాస్వామ్యం కోసం', quickReply1: 'ఓటరుగా నమోదు ఎలా?', quickReply5: 'నేను మొదటిసారి ఓటరును', timelineTitle: 'భారత సాధారణ ఎన్నికల ప్రక్రియ' },
+  mr: { chatTab: 'चॅट', timelineTab: 'टाइमलाइन', boothTab: 'बूथ शोधा', helplineTab: 'हेल्पलाइन', firstVoterTab: 'प्रथम मतदार', factCheckTab: 'तथ्य तपासणी', evmTab: 'EVM मार्गदर्शक', voterStatusTab: 'मतदार स्थिती', typeMessage: 'निवडणुकीबद्दल विचारा...', welcome: 'नमस्कार! 🙏 मी मतदान', welcomeSubtext: 'भारतातील निवडणूक प्रक्रिया समजून घेण्यासाठी तुमचा AI सहाय्यक.', listen: '🔊 ऐका', playing: '⏸️ वाजत आहे...', findBooth: 'माझा जवळचा बूथ शोधा', footerText: '❤️ भारतीय लोकशाहीसाठी', quickReply1: 'मतदार म्हणून नोंदणी कशी?', quickReply5: 'मी पहिल्यांदा मतदार आहे', timelineTitle: 'भारतीय सार्वत्रिक निवडणूक प्रक्रिया' },
+  ta: { chatTab: 'அரட்டை', timelineTab: 'காலவரிசை', boothTab: 'சாவடி கண்டறி', helplineTab: 'உதவி எண்', firstVoterTab: 'முதல் வாக்காளர்', factCheckTab: 'உண்மை சோதனை', evmTab: 'EVM வழிகாட்டி', voterStatusTab: 'வாக்காளர் நிலை', typeMessage: 'தேர்தல் பற்றி கேளுங்கள்...', welcome: 'வணக்கம்! 🙏 நான் மதடான்', welcomeSubtext: 'இந்திய தேர்தல் செயல்முறையை புரிந்துகொள்ள உங்கள் AI உதவியாளர்.', listen: '🔊 கேளுங்கள்', playing: '⏸️ இயங்குகிறது...', findBooth: 'அருகிலுள்ள சாவடி', footerText: '❤️ இந்திய ஜனநாயகத்திற்காக', quickReply1: 'வாக்காளராக பதிவு எப்படி?', quickReply5: 'நான் முதல் முறை வாக்காளர்', timelineTitle: 'இந்திய பொதுத் தேர்தல் செயல்முறை' },
+  gu: { chatTab: 'ચેટ', timelineTab: 'ટાઇમલાઇન', boothTab: 'બૂથ શોધો', helplineTab: 'હેલ્પલાઇન', typeMessage: 'ચૂંટણી વિશે પૂછો...', welcome: 'નમસ્તે! 🙏 હું મતદાન છું', welcomeSubtext: 'ભારતની ચૂંટણી પ્રક્રિયા સમજવા માટે AI સહાયક.', listen: '🔊 સાંભળો', playing: '⏸️ ચાલે છે...', findBooth: 'નજીકનું બૂથ શોધો', footerText: '❤️ ભારતીય લોકશાહી માટે', timelineTitle: 'ભારતીય ચૂંટણી પ્રક્રિયા' },
+  pa: { chatTab: 'ਚੈਟ', timelineTab: 'ਟਾਈਮਲਾਈਨ', boothTab: 'ਬੂਥ ਲੱਭੋ', helplineTab: 'ਹੈਲਪਲਾਈਨ', typeMessage: 'ਚੋਣਾਂ ਬਾਰੇ ਪੁੱਛੋ...', welcome: 'ਸਤ ਸ੍ਰੀ ਅਕਾਲ! 🙏 ਮੈਂ ਮਤਦਾਨ ਹਾਂ', welcomeSubtext: 'ਭਾਰਤ ਦੀ ਚੋਣ ਪ੍ਰਕਿਰਿਆ ਸਮਝਣ ਲਈ AI ਸਹਾਇਕ।', listen: '🔊 ਸੁਣੋ', playing: '⏸️ ਚੱਲ ਰਿਹਾ ਹੈ...', findBooth: 'ਨਜ਼ਦੀਕੀ ਬੂਥ ਲੱਭੋ', footerText: '❤️ ਭਾਰਤੀ ਲੋਕਤੰਤਰ ਲਈ', timelineTitle: 'ਭਾਰਤੀ ਆਮ ਚੋਣ ਪ੍ਰਕਿਰਿਆ' },
+  kn: { chatTab: 'ಚಾಟ್', timelineTab: 'ಟೈಮ್‌ಲೈನ್', boothTab: 'ಬೂತ್ ಹುಡುಕಿ', helplineTab: 'ಸಹಾಯವಾಣಿ', typeMessage: 'ಚುನಾವಣೆ ಬಗ್ಗೆ ಕೇಳಿ...', welcome: 'ನಮಸ್ಕಾರ! 🙏 ನಾನು ಮತದಾನ', welcomeSubtext: 'ಭಾರತದ ಚುನಾವಣಾ ಪ್ರಕ್ರಿಯೆ ಅರ್ಥಮಾಡಿಕೊಳ್ಳಲು AI ಸಹಾಯಕ.', listen: '🔊 ಕೇಳಿ', playing: '⏸️ ಪ್ಲೇ...', findBooth: 'ಹತ್ತಿರದ ಬೂತ್ ಹುಡುಕಿ', footerText: '❤️ ಭಾರತೀಯ ಪ್ರಜಾಪ್ರಭುತ್ವಕ್ಕಾಗಿ', timelineTitle: 'ಭಾರತೀಯ ಚುನಾವಣಾ ಪ್ರಕ್ರಿಯೆ' },
+  ml: { chatTab: 'ചാറ്റ്', timelineTab: 'ടൈംലൈൻ', boothTab: 'ബൂത്ത് കണ്ടെത്തുക', helplineTab: 'ഹെൽപ്പ്‌ലൈൻ', typeMessage: 'തിരഞ്ഞെടുപ്പിനെക്കുറിച്ച് ചോദിക്കൂ...', welcome: 'നമസ്കാരം! 🙏 ഞാൻ മതദാൻ', welcomeSubtext: 'ഇന്ത്യയുടെ തിരഞ്ഞെടുപ്പ് പ്രക്രിയ മനസ്സിലാക്കാൻ AI സഹായി.', listen: '🔊 കേൾക്കുക', playing: '⏸️ പ്ലേ...', findBooth: 'അടുത്തുള്ള ബൂത്ത്', footerText: '❤️ ഇന്ത്യൻ ജനാധിപത്യത്തിനായി', timelineTitle: 'ഇന്ത്യൻ പൊതു തിരഞ്ഞെടുപ്പ് പ്രക്രിയ' },
+  or: { chatTab: 'ଚାଟ', timelineTab: 'ଟାଇମଲାଇନ', boothTab: 'ବୁଥ ଖୋଜନ୍ତୁ', helplineTab: 'ହେଲ୍ପଲାଇନ', typeMessage: 'ନିର୍ବାଚନ ବିଷୟରେ ପଚାରନ୍ତୁ...', welcome: 'ନମସ୍କାର! 🙏 ମୁଁ ମତଦାନ', welcomeSubtext: 'ଭାରତର ନିର୍ବାଚନ ପ୍ରକ୍ରିୟା ବୁଝିବାକୁ AI ସହାୟକ।', listen: '🔊 ଶୁଣନ୍ତୁ', playing: '⏸️ ଚାଲୁଅଛି...', findBooth: 'ନିକଟତମ ବୁଥ ଖୋଜନ୍ତୁ', footerText: '❤️ ଭାରତୀୟ ଗଣତନ୍ତ୍ର ପାଇଁ', timelineTitle: 'ଭାରତୀୟ ସାଧାରଣ ନିର୍ବାଚନ ପ୍ରକ୍ରିୟା' },
+};
+
+/** Get translation with fallback: lang → hi → en */
+export function getTranslation(key: string, language: string): string {
+  return UI_TRANSLATIONS[language]?.[key] || UI_TRANSLATIONS['hi']?.[key] || UI_TRANSLATIONS['en']?.[key] || key;
+}
